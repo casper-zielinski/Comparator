@@ -15,5 +15,9 @@ public class App {
         CharacterUpperAfterLowerComparator cualc = new CharacterUpperAfterLowerComparator();
         Arrays.sort(chars, cualc );
         System.out.println(Arrays.toString(chars));
+        ByLastWordComparator blwc = new ByLastWordComparator();
+        String[] fruits = { "banana", "apple", "green apple", "cherry", "yellow banana", "red cherry" };
+        Arrays.sort(fruits, blwc);
+        System.out.println(Arrays.toString(fruits));
     }
 }
