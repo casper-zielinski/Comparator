@@ -16,7 +16,7 @@
 >
 
 - Reflection Questions:
-  - Why does implements Comparator<char> not work?
+  - Why does implements Comparator\<char> not work?
   - Could you implement a comparator for emojis in Java?
 
 ## ByLastWordComparator
