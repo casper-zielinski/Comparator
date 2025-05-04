@@ -32,11 +32,15 @@
 ## ByLastWordComparator
 
 - Description
->
+
+> Compares the last Words of two Strings, the Word (last Word of the String) that comes alphabetically after the other also comes after the other word, even though the first word or letter may come before alphabetically.
 
 - Reflection Questions:
   - When you try the example solution on the following array, why is the resulting order differ from the example above?
   - above: Before: ``String[] fruits = { "banana", "apple", "green apple", "cherry", "yellow banana", "red cherry" };``  
   After: ``[apple, green apple, banana, yellow banana, cherry, red cherry]``
   - following example:  
-  Before: ``String[] fruits = { "apple", "green apple", "yellow banana", "red cherry", "cherry", "banana" };`` After: ``?``
+  Before: ``String[] fruits = { "apple", "green apple", "yellow banana", "red cherry", "cherry", "banana" };`` After: ``[apple, green apple, yellow banana, banana, red cherry, cherry]``
+  A: because the single words in the first list come before the 2 long Words, and the Comparator only compares the last words, not the word count.
+  - What would you have to do to "fix" this? So that the result would be the same as in the example solution again?
+  A: You could also check for the word count (the Array Length). Then it would probaly come out as the same.

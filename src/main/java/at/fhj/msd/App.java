@@ -17,7 +17,12 @@ public class App {
         System.out.println(Arrays.toString(chars));
         ByLastWordComparator blwc = new ByLastWordComparator();
         String[] fruits = { "banana", "apple", "green apple", "cherry", "yellow banana", "red cherry" };
+        String[] fruits2 = { "apple", "green apple", "yellow banana", "red cherry", "cherry", "banana" };
+
         Arrays.sort(fruits, blwc);
+        Arrays.sort(fruits2, blwc);
+
         System.out.println(Arrays.toString(fruits));
+        System.out.println(Arrays.toString(fruits2));
     }
 }
