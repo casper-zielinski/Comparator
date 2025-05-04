@@ -16,12 +16,18 @@
 ## CharacterUpperAfterLowerComparator
 
 - Description  
->
+
+> Compares two Character values and checks, if they are Numeric, lowercase Alphabetic or uppercase Alphabetic. In the ASCII Table the Uppercase Letters are before the Uppercase and Numbers are before both Letters. Using this Comparator it is possible to sort the Characters from Lowecase -> Uppercase -> Digits and still sorting the individual Letters and Numbers in correct Order.
+>Example:  
+ ``Character[] chars = {'b', '2', 'M', 'n', '4', 'B', 'N', 'm'};``  
+> Sorted with CharacterUpperAfterLowerComparator:  
+ *[b, m, n, B, M, N, 2, 4]*
 
 - Reflection Questions:
   - Why does implements Comparator\<char> not work?
   A: char is a primitive Type and Java generics only work with reference Types like Character for example.
   - Could you implement a comparator for emojis in Java?
+  A: Yes, because there is an existing Character.isEmoji\<and other>()Method. Using this Method, it is possible to also sort emojis using that Comparator.
 
 ## ByLastWordComparator
 
