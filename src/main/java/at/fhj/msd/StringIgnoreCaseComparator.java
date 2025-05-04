@@ -10,6 +10,4 @@ public class StringIgnoreCaseComparator implements Comparator<String> {
             if (o1.compareToIgnoreCase(o2) <= -1) return -1;
             else return 0;
       }
-      
-
 }
